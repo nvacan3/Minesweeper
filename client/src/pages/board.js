@@ -28,7 +28,11 @@ const Board = () => {
         >
           {array2D.map((row, i) =>
             row.map((col, j) => (
-              <div className="Grids" key={`${i}-${j}`}>
+              <div
+                className="Grids"
+                key={`${i}-${j}`}
+                data-dimension={`${i}-${j}`}
+              >
                 {col}
               </div>
             ))
